@@ -11,7 +11,7 @@ This part aims to identify drugs from images containing text descriptions using 
    To set up the project environment, you need to install the required dependencies. Use the following commands in your terminal:
 
    bash
-   ! pip install -r requirements.txt
+!pip install -r requirements.txt
    
 
 3. *Usage*:
