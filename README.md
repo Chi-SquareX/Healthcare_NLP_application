@@ -59,4 +59,4 @@ This project aims to identify drugs from images containing text descriptions usi
 - **Gemini-pro Configuration**:
   
   Before using Gemini, make sure to configure the API key obtained from the Google AI Studio for access to the Gemini model.
-```
+  
