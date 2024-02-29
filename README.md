@@ -1,13 +1,12 @@
 ## OCR-Based Drug Identification
 
 This project aims to identify drugs from images containing text descriptions using Optical Character Recognition (OCR) and Generative AI. By leveraging OCR technology, the project extracts text from images, processes the text to identify drug names, and then utilizes Google Gemini-pro model to generate responses related to the identified drugs.
-```markdown
+
 
 ## Overview
 
 1. **Installation of Dependencies**:
    
-   To set up the project environment, you need to install the required dependencies. Use the following commands in your terminal:
 
    ```bash
    pip install -r requirements.txt
