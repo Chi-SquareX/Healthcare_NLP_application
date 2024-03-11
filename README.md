@@ -1,3 +1,43 @@
+# Disease Classification and Medical QA System
+
+This section of the project involves disease classification using machine learning models and a medical question-answering system using the BioGPT language model.
+
+## Introduction
+
+This section performs the following tasks:
+
+1. **Data Preprocessing**: The dataset (Symptom2Disease.csv) containing symptoms and corresponding disease labels is preprocessed. Text cleaning techniques such as removing punctuation and stop words are applied.
+
+2. **Text Classification**: Several machine learning models are trained on the preprocessed text data to classify diseases based on symptoms. The models include Random Forest, XGBoost, AdaBoost, Gradient Boosting, and Support Vector Classifier (SVC). Ensemble learning is also employed to combine the predictions of multiple models.
+
+3. **Recurrent Neural Network (RNN) Models**: Two RNN models, one using GRU and the other using LSTM, are trained on the disease classification task. These models utilize word embeddings to process the text input and predict the disease label.
+
+4. **Medical Question-Answering System**: The BioGPT language model is fine-tuned on medical text data to create a question-answering system. Given a medical query or symptom description, the system generates appropriate responses using the trained model.
+
+5. **Speech Recognition**: The system includes functionality for transcribing audio files containing patient symptom descriptions. This transcribed text is then used as input for disease classification and question-answering.
+
+
+**Installation of Dependencies**:
+   
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+ 
+
+## Usage
+
+1. **Data Preparation**: Prepare your dataset containing symptoms and corresponding disease labels. Ensure the data is cleaned and preprocessed before training the models.
+
+2. **Training Models**: Run the script to train the machine learning models and RNN models on the prepared dataset.
+
+3. **Fine-tuning BioGPT**: Fine-tune the BioGPT language model on medical text data to create the question-answering system.
+
+4. **Testing and Evaluation**: Evaluate the trained models using appropriate metrics. Test the question-answering system with sample medical queries to ensure its functionality.
+
+5. **Integration**: Integrate the disease classification and question-answering components into your medical application or system for real-world use.
+
+
 # Fine-tuning LLAMA Model on PubMedQA Dataset
 
 This repository contains code for fine-tuning the LLAMA-2 7B model on the PubMedQA dataset, a collection of question-answer pairs derived from PubMed articles, focusing on medical-related queries.
@@ -5,12 +45,6 @@ This repository contains code for fine-tuning the LLAMA-2 7B model on the PubMed
 ## Introduction
 
 The LLAMA model is a powerful language model developed by NousResearch, specifically tailored for understanding medical text and generating accurate responses to medical queries. Fine-tuning the LLAMA model on a specific dataset like PubMedQA involves training the model on the new dataset to adapt its parameters to the specific task or domain.
-
-**Installation of Dependencies**:
-   
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 
 ## Fine-Tuning Process
@@ -53,52 +87,6 @@ The LLAMA model is a powerful language model developed by NousResearch, specific
 
 
 ---
-
-# Disease Classification and Medical QA System
-
-This section of the project involves disease classification using machine learning models and a medical question-answering system using the BioGPT language model.
-
-## Introduction
-
-The code in this section performs the following tasks:
-
-1. **Data Preprocessing**: The dataset containing symptoms and corresponding disease labels is preprocessed. Text cleaning techniques such as removing punctuation and stop words are applied.
-
-2. **Text Classification**: Several machine learning models are trained on the preprocessed text data to classify diseases based on symptoms. The models include Random Forest, XGBoost, AdaBoost, Gradient Boosting, and Support Vector Classifier (SVC). Ensemble learning is also employed to combine the predictions of multiple models.
-
-3. **Recurrent Neural Network (RNN) Models**: Two RNN models, one using GRU and the other using LSTM, are trained on the disease classification task. These models utilize word embeddings to process the text input and predict the disease label.
-
-4. **Medical Question-Answering System**: The BioGPT language model is fine-tuned on medical text data to create a question-answering system. Given a medical query or symptom description, the system generates appropriate responses using the trained model.
-
-5. **Speech Recognition**: The system includes functionality for transcribing audio files containing patient symptom descriptions. This transcribed text is then used as input for disease classification and question-answering.
-
-## Dependencies
-
-Ensure the following dependencies are installed:
-
-- `numpy`
-- `pandas`
-- `nltk`
-- `scikit-learn`
-- `torch`
-- `torchtext`
-- `transformers`
-- `gradio`
-- `librosa`
-- `speech_recognition`
-
-## Usage
-
-1. **Data Preparation**: Prepare your dataset containing symptoms and corresponding disease labels. Ensure the data is cleaned and preprocessed before training the models.
-
-2. **Training Models**: Run the script to train the machine learning models and RNN models on the prepared dataset.
-
-3. **Fine-tuning BioGPT**: Fine-tune the BioGPT language model on medical text data to create the question-answering system.
-
-4. **Testing and Evaluation**: Evaluate the trained models using appropriate metrics. Test the question-answering system with sample medical queries to ensure its functionality.
-
-5. **Integration**: Integrate the disease classification and question-answering components into your medical application or system for real-world use.
-   
 
 
 ## OCR-Based Drug Identification
