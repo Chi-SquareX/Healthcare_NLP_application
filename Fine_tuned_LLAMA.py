@@ -1,6 +1,5 @@
 import os
 import torch
-import gradio as gr
 import re
 from datasets import load_dataset
 from transformers import (
@@ -203,8 +202,6 @@ trainer.train()
 pipe = pipeline(task="text-generation", model=model, tokenizer=tokenizer, max_length=300)
 
 def generate_answer(prompt):
-    gr.Warning("This application might take some time to generate responses. Please be patient.")
-    gr.Warning("This is not a real doctor. Please consult with a medical professional for accurate advice.")
     result = pipe(prompt)
     generated_text = result[0]['generated_text']
     answer_index = generated_text.find("Answer:")
