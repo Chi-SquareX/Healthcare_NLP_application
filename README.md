@@ -52,6 +52,55 @@ The LLAMA model is a powerful language model developed by NousResearch, specific
 3. **Generate Answers**: After fine-tuning, the model can generate answers to medical questions. Use the provided `generate_answer` function to input symptoms or medical queries and receive responses from the fine-tuned LLAMA model.
 
 
+---
+
+# Disease Classification and Medical QA System
+
+This section of the project involves disease classification using machine learning models and a medical question-answering system using the BioGPT language model.
+
+## Introduction
+
+The code in this section performs the following tasks:
+
+1. **Data Preprocessing**: The dataset containing symptoms and corresponding disease labels is preprocessed. Text cleaning techniques such as removing punctuation and stop words are applied.
+
+2. **Text Classification**: Several machine learning models are trained on the preprocessed text data to classify diseases based on symptoms. The models include Random Forest, XGBoost, AdaBoost, Gradient Boosting, and Support Vector Classifier (SVC). Ensemble learning is also employed to combine the predictions of multiple models.
+
+3. **Recurrent Neural Network (RNN) Models**: Two RNN models, one using GRU and the other using LSTM, are trained on the disease classification task. These models utilize word embeddings to process the text input and predict the disease label.
+
+4. **Medical Question-Answering System**: The BioGPT language model is fine-tuned on medical text data to create a question-answering system. Given a medical query or symptom description, the system generates appropriate responses using the trained model.
+
+5. **Speech Recognition**: The system includes functionality for transcribing audio files containing patient symptom descriptions. This transcribed text is then used as input for disease classification and question-answering.
+
+## Dependencies
+
+Ensure the following dependencies are installed:
+
+- `numpy`
+- `pandas`
+- `nltk`
+- `scikit-learn`
+- `torch`
+- `torchtext`
+- `transformers`
+- `gradio`
+- `librosa`
+- `speech_recognition`
+
+## Usage
+
+1. **Data Preparation**: Prepare your dataset containing symptoms and corresponding disease labels. Ensure the data is cleaned and preprocessed before training the models.
+
+2. **Training Models**: Run the script to train the machine learning models and RNN models on the prepared dataset.
+
+3. **Fine-tuning BioGPT**: Fine-tune the BioGPT language model on medical text data to create the question-answering system.
+
+4. **Testing and Evaluation**: Evaluate the trained models using appropriate metrics. Test the question-answering system with sample medical queries to ensure its functionality.
+
+5. **Integration**: Integrate the disease classification and question-answering components into your medical application or system for real-world use.
+   
+
+
 ## OCR-Based Drug Identification
 
 This project aims to identify drugs from images containing text descriptions using Optical Character Recognition (OCR) and Generative AI. By leveraging OCR technology, the project extracts text from images, processes the text to identify drug names, and then utilizes Google Gemini-pro model to generate responses related to the identified drugs.
@@ -105,4 +154,11 @@ This project aims to identify drugs from images containing text descriptions usi
 - **Gemini-pro Configuration**:
   
   Before using Gemini, make sure to configure the API key obtained from the Google AI Studio for access to the Gemini model.
+
+
+  ## Disclaimer
+
+This application is for educational and demonstration purposes only. It should not be used as a substitute for professional medical advice or diagnosis. Always consult with a qualified healthcare provider for accurate medical information and treatment.
+
+---
   
