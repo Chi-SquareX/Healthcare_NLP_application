@@ -151,6 +151,9 @@ This application is for educational and demonstration purposes only. It should n
 
 ---
 
-#**Evaluation of Fine-tuned LLAMA and Microsoft-BioGPT**
-Evaluation of The fine-tuned LLAMA model and the BioGPT model is based on BLEU, ROUGE,BERT Score and Novelty, Diversity and Levenshtein distance metric.
-Fine-tuned LLAMA model has shown nearly similar results in BERT Score and Levenshtein distance and performed better than BioGPT in terms of Diversity metric.
+# Evaluation of Fine-tuned LLAMA and Microsoft-BioGPT
+
+
+The assessment of the fine-tuned LLAMA and Microsoft-BioGPT models entails an examination across various evaluation metrics including BLEU, ROUGE, BERT Score, Novelty, Diversity, and Levenshtein distance. The fine-tuned LLAMA model exhibits comparable performance to BioGPT in BERT Score and Levenshtein distance measures, while demonstrating superior performance in terms of Diversity metric when compared to BioGPT.
+
+---
