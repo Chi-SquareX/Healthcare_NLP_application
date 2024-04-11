@@ -148,5 +148,9 @@ This project aims to identify drugs from images containing text descriptions usi
 
 This application is for educational and demonstration purposes only. It should not be used as a substitute for professional medical advice or diagnosis. Always consult with a qualified healthcare provider for accurate medical information and treatment.
 
+
 ---
-  
+
+#**Evaluation of Fine-tuned LLAMA and Microsoft-BioGPT**
+Evaluation of The fine-tuned LLAMA model and the BioGPT model is based on BLEU, ROUGE,BERT Score and Novelty, Diversity and Levenshtein distance metric.
+Fine-tuned LLAMA model has shown nearly similar results in BERT Score and Levenshtein distance and performed better than BioGPT in terms of Diversity metric.
