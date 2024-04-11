@@ -5,7 +5,7 @@ import google.generativeai as genai  # Make sure this is correctly installed and
 import numpy as np
 import tempfile
 import os
-GOOGLE_API_KEY='AIzaSyBS2MERh2N5iH8ZdsyzD2FnAjo7COGZkEE'
+GOOGLE_API_KEY='YOUR API KEY'
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Initialize OCR and text generation model
