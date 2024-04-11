@@ -203,22 +203,23 @@ This application is for educational and demonstration purposes only. It should n
 
 ---
 
-# Personalized AI Chat Doctor
+# Implementation of RAG using Langchain and Google Gemini
 
+This script utilizes the RAG (Retrieval-Augmented Generation) architecture to generate responses to user queries in the context of healthcare. Here's how it incorporates RAG:
 
-The implemented code incorporates RAG (Retrieval-Augmented Generation) architecture to power the personalized AI chat doctor:
+1. **Retrieval of Relevant Documents**: 
+   - The script loads medical data from JSON files (`iCliniq.json` and `GenMedGPT-5k.json`) and concatenates them to form a context.
+   - It then splits the concatenated context into smaller texts to facilitate efficient retrieval.
 
+2. **Document Retrieval**:
+   - The script constructs a vector index using Chroma to retrieve relevant documents based on user queries.
+   - The retrieved documents serve as contextual information for generating responses.
 
-1. **Retrieval Phase**: The system initially retrieves relevant medical documents or passages from a dataset (e.g., `iCliniq.json` and `GenMedGPT-5k.json`) based on the user's health issues input.
-   
-
-3. **Generation Phase**: After retrieving relevant documents, the system employs a generative model (in this case, the Google GenerativeAI model) to generate detailed responses. These responses are generated using the retrieved documents as contextual information, ensuring that the generated advice aligns with the provided medical context.
-   
-
-5. **Personalization**: RAG facilitates personalization by dynamically selecting relevant documents based on the user's health issues input. This ensures that the generated responses are tailored to the specific health concerns expressed by the user.
-
-
-By leveraging RAG, the system delivers accurate, contextually relevant, and personalized medical advice to users, enhancing the overall effectiveness and user experience of the AI chat doctor application.
+3. **Generation of Responses**:
+   - The script constructs a prompt template that includes placeholders for context and user queries.
+   - It utilizes Langchain's `load_qa_chain` function to set up a question-answering chain (specifically the "stuff" chain) with the specified prompt.
+   - When a user query is input, the script retrieves relevant documents, fills in the prompt template with the retrieved context and user query, and generates an answer using the RAG model.
+   - The generated answer is then displayed to the user.
 
 
 ## Usage
