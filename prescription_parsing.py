@@ -51,7 +51,7 @@ def pipeline(img_path):
 
 ocr = PaddleOCR(use_angle_cls=True, lang='en') 
 
-img_path = '/content/prescription.png'
+img_path = 'prescription.png'
 img = cv2.imread(img_path, cv2.IMREAD_UNCHANGED)
 cv2_imshow(img)
 
