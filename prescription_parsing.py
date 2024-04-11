@@ -70,8 +70,8 @@ for string in strings:
     print(string)
     concatenated_string += string + " , "
 
-
-key = 'AIzaSyB4Z4RQT0LitllhD-D1_sbAgYZd1_FFt2c'
+YOUR_API_KEY = ''
+key = YOUR_API_KEY
 genai.configure(api_key = key)
 
 model = genai.GenerativeModel('gemini-pro')
