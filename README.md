@@ -189,7 +189,7 @@ streamlit run streamlit_Gemini_RAG.py
 
 ## Configuration
 
-- Update the `GOOGLE_API_KEY` variable in `main.py` with your own Google API key.
+- Update the `GOOGLE_API_KEY` variable in `streamlit_Gemini_RAG.py` with your own Google API key.
 - Ensure that the file paths for `iCliniq.json` and `GenMedGPT-5k.json` are correctly set in the code.
 
 
