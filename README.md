@@ -129,7 +129,14 @@ This project aims to identify drugs from images containing text descriptions usi
      
      Execute the provided Python script to perform OCR on the images, identify drug names, and generate responses using Generative AI.
 
-   - **Review Output**:
+     
+   - **Run the Streamlit Deployment**:
+
+   ```bash
+   streamlit run streamlit_prescription_parsing.py
+   ```
+   
+   -**Review Output**:
      
      Review the generated responses to get insights into the drugs identified from the images.
 
