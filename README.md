@@ -151,6 +151,50 @@ This application is for educational and demonstration purposes only. It should n
 
 ---
 
+# Personalized AI Chat Doctor
+
+
+The implemented code incorporates RAG (Retrieval-Augmented Generation) architecture to power the personalized AI chat doctor:
+
+
+1. **Retrieval Phase**: The system initially retrieves relevant medical documents or passages from a dataset (e.g., `iCliniq.json` and `GenMedGPT-5k.json`) based on the user's health issues input.
+   
+
+3. **Generation Phase**: After retrieving relevant documents, the system employs a generative model (in this case, the Google GenerativeAI model) to generate detailed responses. These responses are generated using the retrieved documents as contextual information, ensuring that the generated advice aligns with the provided medical context.
+   
+
+5. **Personalization**: RAG facilitates personalization by dynamically selecting relevant documents based on the user's health issues input. This ensures that the generated responses are tailored to the specific health concerns expressed by the user.
+
+
+By leveraging RAG, the system delivers accurate, contextually relevant, and personalized medical advice to users, enhancing the overall effectiveness and user experience of the AI chat doctor application.
+
+
+## Usage
+
+1. Make sure all dependencies are installed.
+2. Run the Streamlit app:
+
+```bash
+streamlit run streamlit_Gemini_RAG.py
+```
+
+3. The app will launch in your default web browser. Enter your health issues into the chat input.
+4. The AI chat doctor will respond with personalized suggestions and advice based on the provided information.
+
+## Files
+
+- `streamlit_Gemini_RAG.py`: Contains the main code for the Streamlit app.
+- `iCliniq.json`: JSON file containing medical data.
+- `GenMedGPT-5k.json`: Additional JSON file containing medical data.
+
+## Configuration
+
+- Update the `GOOGLE_API_KEY` variable in `main.py` with your own Google API key.
+- Ensure that the file paths for `iCliniq.json` and `GenMedGPT-5k.json` are correctly set in the code.
+
+
+
+
 # Evaluation of Fine-tuned LLAMA and Microsoft-BioGPT
 
 
