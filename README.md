@@ -48,10 +48,6 @@ To run the code in this repository, you'll need to install the following Python 
 This section of the project involves disease classification using machine learning models and a medical question-answering system using the BioGPT language model.
 
 
-## Introduction
-
-This section performs the following tasks:
-
 1. **Data Preprocessing**: The dataset (Symptom2Disease.csv) containing symptoms and corresponding disease labels is preprocessed. Text cleaning techniques such as removing punctuation and stop words are applied.
 
 2. **Text Classification**: Several machine learning models are trained on the preprocessed text data to classify diseases based on symptoms. The models include Random Forest, XGBoost, AdaBoost, Gradient Boosting, and Support Vector Classifier (SVC). Ensemble learning is also employed to combine the predictions of multiple models.
@@ -86,9 +82,6 @@ This section performs the following tasks:
 
 # Fine-tuning LLAMA Model on PubMedQA Dataset
 
-This repository contains code for fine-tuning the LLAMA-2 7B model on the PubMedQA dataset, a collection of question-answer pairs derived from PubMed articles, focusing on medical-related queries.
-
-## Introduction
 
 The LLAMA model is a powerful language model developed by NousResearch, specifically tailored for understanding medical text and generating accurate responses to medical queries. Fine-tuning the LLAMA model on a specific dataset like PubMedQA involves training the model on the new dataset to adapt its parameters to the specific task or domain.
 
@@ -137,8 +130,7 @@ The LLAMA model is a powerful language model developed by NousResearch, specific
 
 ## OCR-Based Drug Identification
 
-This project aims to identify drugs from images containing text descriptions using Optical Character Recognition (OCR) and Generative AI. By leveraging OCR technology, the project extracts text from images, processes the text to identify drug names, and then utilizes Google Gemini-pro model to generate responses related to the identified drugs.
-
+This part aims to identify drugs from images containing text descriptions using Optical Character Recognition (OCR) and Generative AI. By leveraging OCR technology, the project extracts text from images, processes the text to identify drug names, and then utilizes Google Gemini-pro model to generate responses related to the identified drugs.
 
 
 **Usage**:
