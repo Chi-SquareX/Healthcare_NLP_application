@@ -1,3 +1,47 @@
+Introduction:
+
+Welcome to the [Repository Name]! This repository hosts the codebase for [brief description of what the code does, e.g., "an AI-powered healthcare assistant for personalized medical advice"]. Our project leverages advanced natural language processing techniques and state-of-the-art machine learning models to deliver accurate and personalized responses tailored to users' health concerns.
+
+Cloning the Repository:
+
+To clone this repository, follow these simple steps:
+
+1. Open your terminal.
+2. Navigate to the directory where you want to clone the repository.
+3. Run the following command:
+
+```
+git clone [repository_url]
+```
+
+
+List of Requirements:
+
+To run the code in this repository, you'll need to install the following Python packages:
+
+- accelerate==0.21.0
+- bitsandbytes==0.40.2
+- chromadb
+- git+https://github.com/openai/whisper.git
+- google-generativeai
+- gradio
+- huggingface-hub
+- langchain
+- langchain_community
+- langchain-google-genai
+- paddleocr
+- paddlepaddle-gpu
+- peft==0.4.0
+- sacremoses
+- speechrecognition
+- streamlit
+- transformers==4.31.0
+- trl==0.4.7
+
+
+---
+
+
 # Disease Classification and Medical QA System
 
 This section of the project involves disease classification using machine learning models and a medical question-answering system using the BioGPT language model.
