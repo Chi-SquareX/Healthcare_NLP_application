@@ -1,6 +1,6 @@
-Introduction:
+# Introduction:
 
-Welcome to the [Repository Name]! This repository hosts the codebase for [brief description of what the code does, e.g., "an AI-powered healthcare assistant for personalized medical advice"]. Our project leverages advanced natural language processing techniques and state-of-the-art machine learning models to deliver accurate and personalized responses tailored to users' health concerns.
+This repository hosts the codebase for "an AI-powered healthcare assistant for personalized medical advice and Prescription Parsing". Our project leverages advanced natural language processing techniques and state-of-the-art machine learning models to deliver accurate and personalized responses tailored to users' health concerns.
 
 Cloning the Repository:
 
@@ -11,7 +11,8 @@ To clone this repository, follow these simple steps:
 3. Run the following command:
 
 ```
-git clone [repository_url]
+git clone https://github.com/Chi-SquareX/Healthcare_NLP_application/
+
 ```
 
 
@@ -244,7 +245,7 @@ streamlit run streamlit_Gemini_RAG.py
 - Ensure that the file paths for `iCliniq.json` and `GenMedGPT-5k.json` are correctly set in the code.
 
 
-
+---
 
 # Evaluation of Fine-tuned LLAMA and Microsoft-BioGPT
 
@@ -252,3 +253,8 @@ streamlit run streamlit_Gemini_RAG.py
 The assessment of the fine-tuned LLAMA and Microsoft-BioGPT models entails an examination across various evaluation metrics including BLEU, ROUGE, BERT Score, Novelty, Diversity, and Levenshtein distance. The fine-tuned LLAMA model exhibits comparable performance to BioGPT in BERT Score and Levenshtein distance measures, while demonstrating superior performance in terms of Diversity metric when compared to BioGPT.
 
 ---
+
+# Combined Deployment
+
+This notebook contains the combined deployment of Fine-tuned LLAMA, RAG using Gemini and Prescription Parsing using PaddleOCR.
+
