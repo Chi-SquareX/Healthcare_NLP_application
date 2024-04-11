@@ -1,6 +1,6 @@
 # Introduction:
 
-This repository hosts the codebase for "an AI-powered healthcare assistant for personalized medical advice and Prescription Parsing". It leverages advanced natural language processing techniques and state-of-the-art machine learning models to deliver accurate and personalized responses tailored to users' health concerns.
+This repository hosts the codebase for "an AI-powered healthcare assistant for personalized medical advice and Prescription Parsing". It leverages advanced natural language processing, Optical Character Recognition techniques and state-of-the-art machine learning models to deliver accurate and personalized responses tailored to users' health concerns.
 
 Cloning the Repository:
 
