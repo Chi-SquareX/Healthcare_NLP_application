@@ -1,6 +1,6 @@
 # Introduction:
 
-This repository hosts the codebase for "an AI-powered healthcare assistant for personalized medical advice and Prescription Parsing". Our project leverages advanced natural language processing techniques and state-of-the-art machine learning models to deliver accurate and personalized responses tailored to users' health concerns.
+This repository hosts the codebase for "an AI-powered healthcare assistant for personalized medical advice and Prescription Parsing". It leverages advanced natural language processing techniques and state-of-the-art machine learning models to deliver accurate and personalized responses tailored to users' health concerns.
 
 Cloning the Repository:
 
@@ -46,6 +46,7 @@ To run the code in this repository, you'll need to install the following Python 
 # Disease Classification and Medical QA System
 
 This section of the project involves disease classification using machine learning models and a medical question-answering system using the BioGPT language model.
+
 
 ## Introduction
 
