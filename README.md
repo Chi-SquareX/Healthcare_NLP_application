@@ -40,7 +40,15 @@ To run the code in this repository, you'll need to install the following Python 
 - trl==0.4.7
 
 
+**Installation of Dependencies**:
+   
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
 ---
+
 
 
 # Disease Classification and Medical QA System
@@ -58,12 +66,6 @@ This section of the project involves disease classification using machine learni
 
 5. **Speech Recognition**: The system includes functionality for transcribing audio files containing patient symptom descriptions. This transcribed text is then used as input for disease classification and question-answering.
 
-
-**Installation of Dependencies**:
-   
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ---
 
@@ -125,7 +127,7 @@ This part aims to identify drugs from images containing text descriptions using 
 
    - **OCR (Optical Character Recognition)**:
      
-     The project utilizes PaddleOCR, a deep learning-based OCR tool, to extract text from images. This text extraction step is crucial for identifying drug names present in the images.
+     The script utilizes PaddleOCR, a deep learning-based OCR tool, to extract text from images. This text extraction step is crucial for identifying drug names present in the images.
      
    - **Drug Identification**:
      
