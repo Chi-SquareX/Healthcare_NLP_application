@@ -22,6 +22,7 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
+from streamlit_mic_recorder import mic_recorder, speech_to_text
 
 
 
@@ -36,8 +37,8 @@ data = data + data1
 def to_markdown(text):
   text = text.replace('•', '  *')
   return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
-import os
-GOOGLE_API_KEY='YOUR API KEY'
+
+GOOGLE_API_KEY='YOUR_API_KEY'
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel(model_name = "gemini-pro")
 
@@ -79,29 +80,55 @@ st.title('Personalized AI Chat Doctor')
 
 if 'messages' not in st.session_state:
     st.session_state.messages = []
+
+state = st.session_state
+
+if 'text_received' not in state:
+    st.session_state.text_received = []
     
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
 
+for texts in st.session_state.text_received:
+    st.chat_message("user").write(texts)
+
+c1, c2 = st.columns(2)
+with c1:
+    st.write("Want to speak? ")
+with c2:
+    speech_input = speech_to_text(language='en', use_container_width=True, just_once=True, key='STT')
 
 
-# Chat input for health issues
 if prompt := st.chat_input("Enter your health issues"):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.markdown(prompt)
 
+if speech_input:
+    st.session_state.messages.append({"role": "user", "content": speech_input})
+    with st.chat_message("user"):
+        st.markdown(speech_input)
 
 
-if prompt is not None:
+
+if prompt is not None and speech_input is None:
     with st.chat_message("assistant"):
         message_placeholder = st.empty()
         full_response = ""
         full_response += generate_answer(prompt)
         message_placeholder.markdown(full_response + "▌")
-        message_placeholder.markdown(full_response)
+        # message_placeholder.markdown(full_response)
     st.session_state.messages.append({"role": "assistant", "content": full_response})
     #st.chat_message("assistant").write(full_response)
+
+if speech_input is not None and prompt is None:
+     with st.chat_message("assistant"):
+        message_placeholder = st.empty()
+        response = ""
+        response += generate_answer(speech_input)
+        message_placeholder.markdown(response + "▌")
+        # message_placeholder.markdown(response)
+     st.session_state.messages.append({"role": "assistant", "content": response})
 
 
 
