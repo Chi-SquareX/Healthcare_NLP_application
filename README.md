@@ -65,19 +65,7 @@ This section of the project involves disease classification using machine learni
    pip install -r requirements.txt
    ```
 
- 
-
-## Usage
-
-1. **Data Preparation**: Prepare your dataset containing symptoms and corresponding disease labels. Ensure the data is cleaned and preprocessed before training the models.
-
-2. **Training Models**: Run the script to train the machine learning models and RNN models on the prepared dataset.
-
-3. **Fine-tuning BioGPT**: Fine-tune the BioGPT language model on medical text data to create the question-answering system.
-
-4. **Testing and Evaluation**: Evaluate the trained models using appropriate metrics. Test the question-answering system with sample medical queries to ensure its functionality.
-
-5. **Integration**: Integrate the disease classification and question-answering components into your medical application or system for real-world use.
+---
 
 
 # Fine-tuning LLAMA Model on PubMedQA Dataset
@@ -141,7 +129,7 @@ This part aims to identify drugs from images containing text descriptions using 
      
    - **Drug Identification**:
      
-     After extracting text from images, the project processes the text to identify drug names. It concatenates the extracted strings and uses Google Gemini to generate responses related to the identified drugs.
+     After extracting text from images, the script processes the text to identify drug names. It concatenates the extracted strings and uses Google Gemini to generate responses related to the identified drugs.
      
    - **Generative AI**:
      
@@ -189,12 +177,8 @@ This part aims to identify drugs from images containing text descriptions using 
   Before using Gemini, make sure to configure the API key obtained from the Google AI Studio for access to the Gemini model.
 
 
-  ## Disclaimer
-
-This application is for educational and demonstration purposes only. It should not be used as a substitute for professional medical advice or diagnosis. Always consult with a qualified healthcare provider for accurate medical information and treatment.
-
-
 ---
+
 
 # Implementation of RAG using Langchain and Google Gemini
 
@@ -205,11 +189,11 @@ This script utilizes the RAG (Retrieval-Augmented Generation) architecture to ge
    - It then splits the concatenated context into smaller texts to facilitate efficient retrieval.
 
 2. **Document Retrieval**:
-   - The script constructs a vector index using Chroma to retrieve relevant documents based on user queries.
+   - A vector index is constructed using Chroma to retrieve relevant documents based on user queries.
    - The retrieved documents serve as contextual information for generating responses.
 
 3. **Generation of Responses**:
-   - The script constructs a prompt template that includes placeholders for context and user queries.
+   - A prompt template is constructed that includes placeholders for context and user queries.
    - It utilizes Langchain's `load_qa_chain` function to set up a question-answering chain (specifically the "stuff" chain) with the specified prompt.
    - When a user query is input, the script retrieves relevant documents, fills in the prompt template with the retrieved context and user query, and generates an answer using the RAG model.
    - The generated answer is then displayed to the user.
@@ -251,4 +235,11 @@ The assessment of the fine-tuned LLAMA and Microsoft-BioGPT models entails an ex
 # Combined Deployment
 
 This notebook contains the combined deployment of Fine-tuned LLAMA, RAG using Gemini and Prescription Parsing using PaddleOCR.
+
+---
+
+## Disclaimer
+
+This application is for educational and demonstration purposes only. It should not be used as a substitute for professional medical advice or diagnosis. Always consult with a qualified healthcare provider for accurate medical information and treatment.
+
 
