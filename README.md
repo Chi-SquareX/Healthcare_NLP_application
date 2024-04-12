@@ -1,6 +1,6 @@
 # Introduction:
 
-This repository contains the codebase for an  "AI-powered healthcare assistant for personalized medical advice and Prescription Parsing". It leverages advanced Natural Language Processing, Optical Character Recognition techniques and state-of-the-art machine learning models to deliver accurate and personalized responses tailored to users' health concerns.
+This repository contains the codebase for an  "AI-powered healthcare assistant for personalized medical advice with the functionality of speech input and Prescription Parsing". It leverages advanced Natural Language Processing, Optical Character Recognition techniques and state-of-the-art machine learning models to deliver accurate and personalized responses tailored to users' health concerns.
 
 Cloning the Repository:
 
@@ -197,7 +197,7 @@ This script utilizes the RAG (Retrieval-Augmented Generation) architecture to ge
    - The retrieved documents serve as contextual information for generating responses.
 
 3. **Generation of Responses**:
-   - A prompt template is constructed that includes placeholders for context and user queries.
+   - A prompt template is constructed that includes placeholders for context and user queries. The user is also able to give speech input.
    - It utilizes Langchain's `load_qa_chain` function to set up a question-answering chain (specifically the "stuff" chain) with the specified prompt.
    - When a user query is input, the script retrieves relevant documents, fills in the prompt template with the retrieved context and user query, and generates an answer using the RAG model.
    - The generated answer is then displayed to the user.
