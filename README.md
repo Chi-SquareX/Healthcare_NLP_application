@@ -108,9 +108,10 @@ The LLAMA model is a powerful language model developed by NousResearch, specific
 
 ## Usage
 
-1. **Clone Repository**: Clone this repository to your local machine.
 
-2. **Run Fine-Tuning Script**: Execute the fine-tuning script (`fine_tune_llama.py`) to start the fine-tuning process. This script will load the PubMedQA dataset, configure the model, and train it using the specified parameters.
+1. **Run Fine-Tuning Script**:
+   After cloning the repository, execute the fine-tuning script (`fine_tune_llama.py`) to start the fine-tuning process. This script will load the PubMedQA dataset, configure the model, and train it using the specified parameters.
+   
 
 3. **Generate Answers**: After fine-tuning, the model can generate answers to medical questions. Use the provided `generate_answer` function to input symptoms or medical queries and receive responses from the fine-tuned LLAMA model.
 
