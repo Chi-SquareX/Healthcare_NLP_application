@@ -38,6 +38,7 @@ To run the code in this repository, you'll need to install the following Python 
 - streamlit
 - transformers==4.31.0
 - trl==0.4.7
+- streamlit-mic-recorder
 
 
 **Installation of Dependencies**:
