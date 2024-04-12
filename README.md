@@ -186,7 +186,7 @@ This part aims to identify drugs from images containing text descriptions using 
 
 # Implementation of RAG using Langchain and Google Gemini
 
-This script utilizes the RAG (Retrieval-Augmented Generation) architecture to generate responses to user queries in the context of healthcare. Here's how it incorporates RAG:
+This script utilizes the RAG (Retrieval-Augmented Generation) architecture to generate responses to user queries in the context of healthcare. The user is also able to give speech input. Here's how it incorporates RAG:
 
 1. **Retrieval of Relevant Documents**: 
    - The script loads medical data from JSON files (`iCliniq.json` and `GenMedGPT-5k.json`) and concatenates them to form a context.
@@ -197,7 +197,7 @@ This script utilizes the RAG (Retrieval-Augmented Generation) architecture to ge
    - The retrieved documents serve as contextual information for generating responses.
 
 3. **Generation of Responses**:
-   - A prompt template is constructed that includes placeholders for context and user queries. The user is also able to give speech input.
+   - A prompt template is constructed that includes placeholders for context and user queries. 
    - It utilizes Langchain's `load_qa_chain` function to set up a question-answering chain (specifically the "stuff" chain) with the specified prompt.
    - When a user query is input, the script retrieves relevant documents, fills in the prompt template with the retrieved context and user query, and generates an answer using the RAG model.
    - The generated answer is then displayed to the user.
