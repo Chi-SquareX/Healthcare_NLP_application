@@ -11,10 +11,9 @@ To clone this repository, follow these simple steps:
 3. Run the following command:
 
 ```
-git clone https://github.com/Chi-SquareX/Healthcare_NLP_application/
+git clone https://github.com/Chi-SquareX/Healthcare_NLP_application
 
 ```
-
 
 List of Requirements:
 
